@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { IoGlobeOutline, IoServerOutline, IoHardwareChipOutline, IoRibbonOutline } from "react-icons/io5";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,33 +31,21 @@ export default function SkillsAndCertifications() {
       description: "LAN/WAN routing, switching, and configuration architectures.",
       items: ["Computer Networking", "MikroTik Routing", "Cisco CLI", "VRouter / Firewall Setup"],
       color: "border-primary hover:shadow-primary/10",
-      icon: (
-        <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
-        </svg>
-      )
+      icon: <IoGlobeOutline className="h-6 w-6 text-primary" />
     },
     {
       category: "Databases & Storage",
       description: "Structured query formulation, administration, and secure backup routines.",
       items: ["Oracle Database", "Microsoft SQL Server", "Relational Database Management", "Database Administration"],
       color: "border-secondary hover:shadow-secondary/10",
-      icon: (
-        <svg className="h-6 w-6 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-        </svg>
-      )
+      icon: <IoServerOutline className="h-6 w-6 text-secondary" />
     },
     {
       category: "Systems & Diagnostics",
       description: "Hypervisor virtualization setups, bare-metal hardware and corporate software troubleshooting.",
       items: ["VMware ESXi", "Virtualization & Hypervisors", "Hardware Servicing", "Operating Systems Setup", "System Maintenance"],
       color: "border-accent hover:shadow-accent/10",
-      icon: (
-        <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-        </svg>
-      )
+      icon: <IoHardwareChipOutline className="h-6 w-6 text-accent" />
     }
   ];
 
@@ -232,9 +221,7 @@ export default function SkillsAndCertifications() {
                       <span className="rounded-md bg-zinc-950 border border-zinc-800 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent">
                         {cert.year}
                       </span>
-                      <svg className="h-5 w-5 text-zinc-650" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M6.267 3.455a.75.75 0 00-.708-.523H4.5a2 2 0 00-2 2v1.07c0 .35.186.671.491.846L5 8.2v1.3a2 2 0 00.586 1.414l2.121 2.121a2 2 0 001.414.586h1.758a2 2 0 001.414-.586l2.121-2.121A2 2 0 0015 9.5V8.2l2.009-1.352c.305-.175.491-.496.491-.846V4.932a2 2 0 00-2-2h-1.059a.75.75 0 00-.708.523l-.337 1.012H6.604l-.337-1.012zm1.656 4.045h4.154l-.454 1.362a.5.5 0 01-.474.338H8.91a.5.5 0 01-.474-.338L7.923 7.5z" clipRule="evenodd" />
-                      </svg>
+                      <IoRibbonOutline className="h-5 w-5 text-zinc-650" />
                     </div>
                     <h4 className="text-sm font-bold text-white leading-snug mb-1">
                       {cert.title}

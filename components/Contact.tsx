@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { IoMailOutline, IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,28 +74,11 @@ export default function Contact() {
                   className="flex items-center gap-3 w-fit group text-zinc-300 hover:text-white transition-colors"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-950 border border-zinc-850 group-hover:border-primary transition-colors">
-                    <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
+                    <IoMailOutline className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider leading-none">Email Me</p>
                     <span className="text-sm font-semibold">rifqifauzan78@gmail.com</span>
-                  </div>
-                </a>
-
-                <a
-                  href="tel:+6285156638177"
-                  className="flex items-center gap-3 w-fit group text-zinc-300 hover:text-white transition-colors"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-950 border border-zinc-850 group-hover:border-secondary transition-colors">
-                    <svg className="h-5 w-5 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider leading-none">Call Me</p>
-                    <span className="text-sm font-semibold">+62 851 5663 8177</span>
                   </div>
                 </a>
               </div>
@@ -106,9 +90,7 @@ export default function Contact() {
                 href="mailto:rifqifauzan78@gmail.com"
                 className="w-full text-center rounded-2xl bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-bold py-4 px-6 shadow-xl shadow-indigo-500/10 hover:shadow-indigo-500/25 transition-all duration-300 hover:scale-[1.03] active:scale-95 text-md mb-4 flex items-center justify-center gap-2"
               >
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                </svg>
+                <IoChatbubbleEllipsesOutline className="h-5 w-5" />
                 Send Message
               </a>
               <p className="text-xs text-muted-foreground text-center">

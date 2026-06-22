@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { IoMailOutline, IoCallOutline, IoLocationOutline, IoLanguageOutline } from "react-icons/io5";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -86,9 +87,7 @@ export default function Hero() {
           <div className="animate-hero-text grid grid-cols-1 gap-4 sm:grid-cols-2 mb-8 border-y border-border/60 py-6">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-900 border border-border">
-                <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
+                <IoMailOutline className="h-5 w-5 text-accent" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground font-semibold uppercase">Email</p>
@@ -100,9 +99,7 @@ export default function Hero() {
 
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-900 border border-border">
-                <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
+                <IoCallOutline className="h-5 w-5 text-accent" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground font-semibold uppercase">Phone</p>
@@ -114,10 +111,7 @@ export default function Hero() {
 
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-900 border border-border">
-                <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+                <IoLocationOutline className="h-5 w-5 text-accent" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground font-semibold uppercase">Location</p>
@@ -127,9 +121,7 @@ export default function Hero() {
 
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-900 border border-border">
-                <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 002 2h2a2 2 0 002-2V7.5C19 6.12 17.88 5 16.5 5c-.02 0-.03 0-.05.01a1 1 0 00-.7-.29h-.75a1 1 0 01-1-1v-.384" />
-                </svg>
+                <IoLanguageOutline className="h-5 w-5 text-accent" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground font-semibold uppercase">Languages</p>
@@ -178,12 +170,6 @@ export default function Hero() {
                   <span className="text-sm font-semibold text-white tracking-wide">Rifqi Fauzan</span>
                   <span className="text-[11px] text-zinc-400 font-medium font-mono uppercase tracking-wider mt-0.5">
                     System Engineer &amp; IT Support
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5 bg-emerald-950/50 border border-emerald-900/40 rounded-full px-2.5 py-1">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest font-mono">
-                    Online
                   </span>
                 </div>
               </div>

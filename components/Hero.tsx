@@ -99,33 +99,11 @@ export default function Hero() {
 
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-900 border border-border">
-                <IoCallOutline className="h-5 w-5 text-accent" />
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground font-semibold uppercase">Phone</p>
-                <a href="tel:+6285156638177" className="text-sm font-medium text-white hover:text-primary transition-colors">
-                  +62 851 5663 8177
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-900 border border-border">
                 <IoLocationOutline className="h-5 w-5 text-accent" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground font-semibold uppercase">Location</p>
                 <span className="text-sm font-medium text-white">Jakarta, Indonesia</span>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-900 border border-border">
-                <IoLanguageOutline className="h-5 w-5 text-accent" />
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground font-semibold uppercase">Languages</p>
-                <span className="text-sm font-medium text-white">Indonesian, English</span>
               </div>
             </div>
           </div>

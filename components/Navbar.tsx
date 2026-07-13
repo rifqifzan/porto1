@@ -35,7 +35,6 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden items-center space-x-8 md:flex">
           {navLinks.map((link) => (
             <a
@@ -54,7 +53,6 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Mobile Contact Link */}
         <div className="flex md:hidden">
           <a
             href="#contact"

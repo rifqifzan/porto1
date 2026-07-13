@@ -99,12 +99,10 @@ export default function EducationAndOrganizations() {
 
   return (
     <section id="education" ref={containerRef} className="relative bg-zinc-950 py-24 sm:py-32 border-t border-zinc-900/60">
-      {/* Decorative Glow Orbs */}
       <div className="absolute right-[10%] top-[10%] -z-10 h-72 w-72 rounded-full bg-secondary/5 blur-[90px]" />
       <div className="absolute left-[10%] bottom-[10%] -z-10 h-72 w-72 rounded-full bg-primary/5 blur-[90px]" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-12">
-        {/* Section Header */}
         <div className="mb-20 text-center">
           <h2 className="text-sm font-semibold tracking-wider text-secondary uppercase mb-3">
             Academic Background
@@ -115,9 +113,7 @@ export default function EducationAndOrganizations() {
           <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-gradient-to-r from-secondary to-primary" />
         </div>
 
-        {/* Layout Split Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Left: Education Column */}
           <div className="edu-container flex flex-col gap-8">
             <div>
               <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-3">
@@ -159,7 +155,6 @@ export default function EducationAndOrganizations() {
             </div>
           </div>
 
-          {/* Right: Organizations Column */}
           <div className="org-container flex flex-col gap-8">
             <div>
               <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-3">

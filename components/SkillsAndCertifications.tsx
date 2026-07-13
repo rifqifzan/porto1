@@ -137,12 +137,10 @@ export default function SkillsAndCertifications() {
 
   return (
     <section id="skills" ref={containerRef} className="relative bg-zinc-950 py-24 sm:py-32 border-t border-zinc-900/60">
-      {/* Decorative Blur Spheres */}
       <div className="absolute left-10 top-[20%] -z-10 h-80 w-80 rounded-full bg-accent/5 blur-[100px]" />
       <div className="absolute right-10 bottom-[20%] -z-10 h-80 w-80 rounded-full bg-primary/5 blur-[100px]" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-12">
-        {/* Section Header */}
         <div className="mb-20 text-center">
           <h2 className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">
             Competencies &amp; Credentials
@@ -153,10 +151,8 @@ export default function SkillsAndCertifications() {
           <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-gradient-to-r from-accent to-primary" />
         </div>
 
-        {/* Section Grid: Skills Hub and Certifications List */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           
-          {/* Left: Skills Columns (5 columns on large screen) */}
           <div className="lg:col-span-5 flex flex-col justify-start">
             <div className="mb-8">
               <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
@@ -198,7 +194,6 @@ export default function SkillsAndCertifications() {
             </div>
           </div>
 
-          {/* Right: Certifications Cards (7 columns on large screen) */}
           <div className="lg:col-span-7 flex flex-col justify-start">
             <div className="mb-8">
               <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">

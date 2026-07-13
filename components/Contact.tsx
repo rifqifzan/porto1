@@ -42,32 +42,27 @@ export default function Contact() {
       ref={containerRef}
       className="relative bg-zinc-950 pt-20 pb-12 border-t border-zinc-900/60 overflow-hidden"
     >
-      {/* Glow highlight */}
+
       <div className="absolute left-1/2 bottom-[-100px] -translate-x-1/2 -z-10 h-80 w-[600px] rounded-full bg-primary/10 blur-[120px]" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-12">
-        {/* Main CTA Card */}
+
         <div
           ref={cardRef}
           className="mx-auto max-w-4xl rounded-3xl border border-zinc-850 bg-gradient-to-br from-zinc-900/40 via-zinc-900/20 to-zinc-950 glass-card p-8 md:p-12 shadow-2xl relative overflow-hidden"
         >
-          {/* Subtle grid pattern overlay inside card */}
+          
           <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] -z-10" />
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-            {/* Column 1: Info (7 cols) */}
             <div className="md:col-span-7 space-y-6">
-              <span className="rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-primary">
-                Get In Touch
-              </span>
               <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                Let&apos;s build or monitor something secure together.
+                Let&apos;s build something exceptional together.
               </h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                Seeking a dedicated IT Support Specialist or System Engineer? I am equipped to handle network failures, optimize active databases, manage device diagnostics, and maintain mission-critical infrastructure services. Reach out directly.
+                Looking for a dedicated Software Engineer to develop scalable web applications, write clean code, and design modern user experiences? Let&apos;s collaborate to bring your ideas to life. Reach out directly.
               </p>
 
-              {/* Instant contact methods */}
               <div className="flex flex-col gap-3.5 pt-2">
                 <a
                   href="mailto:rifqifauzan78@gmail.com"
@@ -84,7 +79,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Column 2: Button link (5 cols) */}
+           
             <div className="md:col-span-5 flex flex-col items-center justify-center md:border-l md:border-zinc-800/80 md:pl-8">
               <a
                 href="mailto:rifqifauzan78@gmail.com"
@@ -93,14 +88,10 @@ export default function Contact() {
                 <IoChatbubbleEllipsesOutline className="h-5 w-5" />
                 Send Message
               </a>
-              <p className="text-xs text-muted-foreground text-center">
-                Response time: usually within 24 hours.
-              </p>
             </div>
           </div>
         </div>
 
-        {/* Footer info bar */}
         <div className="mt-20 border-t border-zinc-900/60 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
             &copy; {currentYear} Rifqi Fauzan. All rights reserved.

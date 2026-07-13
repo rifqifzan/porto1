@@ -96,12 +96,10 @@ export default function Experience() {
 
   return (
     <section id="experience" ref={containerRef} className="relative bg-zinc-950 py-24 sm:py-32">
-      {/* Glow highlight */}
       <div className="absolute right-0 top-[30%] -z-10 h-96 w-96 rounded-full bg-secondary/5 blur-[120px]" />
       <div className="absolute left-0 bottom-[10%] -z-10 h-96 w-96 rounded-full bg-primary/5 blur-[120px]" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-12">
-        {/* Header */}
         <div className="mb-20 text-center">
           <h2 className="text-sm font-semibold tracking-wider text-primary uppercase mb-3">
             Career Journey
@@ -112,16 +110,13 @@ export default function Experience() {
           <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-gradient-to-r from-primary to-secondary" />
         </div>
 
-        {/* Timeline container */}
         <div className="relative mx-auto max-w-4xl">
-          {/* Vertical central lines */}
           <div className="absolute left-4 top-0 h-full w-[2px] bg-zinc-900 md:left-1/2 md:-translate-x-1/2" />
           <div
             ref={lineRef}
             className="absolute left-4 top-0 h-full w-[2px] origin-top bg-gradient-to-b from-primary via-secondary to-accent md:left-1/2 md:-translate-x-1/2 shadow-[0_0_10px_rgba(99,102,241,0.5)]"
           />
 
-          {/* Timeline events */}
           <div className="space-y-12">
             {experiences.map((exp, idx) => {
               const isEven = idx % 2 === 0;
@@ -130,12 +125,10 @@ export default function Experience() {
                   key={idx}
                   className="timeline-card-wrapper flex flex-col md:flex-row relative items-stretch"
                 >
-                  {/* Anchor Point Bullet */}
                   <div className="absolute left-4 top-6 z-10 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full bg-zinc-950 border-2 border-primary md:left-1/2">
                     <span className="h-2 w-2 rounded-full bg-accent animate-ping" />
                   </div>
 
-                  {/* Left block (Desktop empty block or card) */}
                   <div className={`w-full md:w-1/2 pl-12 md:pl-0 ${isEven ? "md:pr-12 md:text-right" : "md:order-last md:pl-12"}`}>
                     {isEven && (
                       <div className="rounded-2xl glass-card p-6 md:p-8 hover:border-primary/60 transition-all duration-300 shadow-xl group">
@@ -171,7 +164,6 @@ export default function Experience() {
                     )}
                   </div>
 
-                  {/* Right block (Desktop empty block or card) */}
                   <div className={`w-full md:w-1/2 pl-12 md:pl-0 ${!isEven ? "md:pl-12 text-left" : "md:order-first md:pr-12"}`}>
                     {!isEven && (
                       <div className="rounded-2xl glass-card p-6 md:p-8 hover:border-secondary/60 transition-all duration-300 shadow-xl group">

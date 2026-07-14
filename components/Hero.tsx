@@ -71,14 +71,14 @@ export default function Hero() {
           </div>
 
           <h2 className="animate-hero-text text-sm font-semibold tracking-wider text-primary uppercase mb-2">
-            System Engineer &amp; IT Support
+            Full Stack Software Engineer
           </h2>
           <h1 className="animate-hero-text text-4xl font-extrabold tracking-tight sm:text-6xl text-white mb-6">
             Rifqi Fauzan
           </h1>
 
           <p className="animate-hero-text text-lg text-muted-foreground leading-relaxed mb-8">
-            An experienced IT professional highly capable of resolving complex network issues, implementing new software, installing server hardware, managing user troubleshooting, and maintaining high-availability enterprise services under pressure in fast-paced environments.
+            I&apos;m a Full Stack Software Engineer with roots in enterprise infrastructure, from network administration to managing production systems at Bank Mandiri. Years of watching software failures cascade into business-critical downtime made one thing clear, that great systems start with great code. That conviction drove me to pivot into full-stack development through RevoU&apos;s intensive bootcamp, where I built production-ready applications with TypeScript, Next.js, Nest.js, and PostgreSQL.
           </p>
 
           <div className="animate-hero-text grid grid-cols-1 gap-4 sm:grid-cols-2 mb-8 border-y border-border/60 py-6">
@@ -140,7 +140,7 @@ export default function Hero() {
                 <div className="flex flex-col">
                   <span className="text-sm font-semibold text-white tracking-wide">Rifqi Fauzan</span>
                   <span className="text-[11px] text-zinc-400 font-medium font-mono uppercase tracking-wider mt-0.5">
-                    System Engineer &amp; IT Support
+                    Full Stack Software Engineer
                   </span>
                 </div>
               </div>

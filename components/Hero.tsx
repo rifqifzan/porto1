@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { IoMailOutline, IoCallOutline, IoLocationOutline, IoLanguageOutline } from "react-icons/io5";
+import { IoMailOutline, IoCallOutline, IoLocationOutline, IoLanguageOutline, IoDownloadOutline } from "react-icons/io5";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -117,6 +117,14 @@ export default function Hero() {
               className="rounded-xl border border-border bg-zinc-900/40 hover:bg-zinc-800/40 px-6 py-3.5 text-sm font-semibold text-white hover:scale-105 active:scale-95 transition-all duration-300"
             >
               View Work History
+            </a>
+            <a
+              href="/ATS-Rifqi.pdf"
+              download="Rifqi_Fauzan_CV.pdf"
+              className="rounded-xl border border-border bg-zinc-900/40 hover:bg-zinc-800/40 px-6 py-3.5 text-sm font-semibold text-white hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2"
+            >
+              <span>Download CV</span>
+              <IoDownloadOutline className="h-4 w-4" />
             </a>
           </div>
         </div>

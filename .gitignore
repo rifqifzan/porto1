@@ -44,3 +44,6 @@ next-env.d.ts
 #md files
 /agents.md
 /claude.md
+
+# pdf
+public/ATS-Rifqi.pdf

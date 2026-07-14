@@ -13,6 +13,7 @@ interface Project {
   description: string;
   link: string;
   github: string;
+  techStack: string[];
 }
 
 export default function Projects() {
@@ -22,9 +23,10 @@ export default function Projects() {
     {
       title: "RevoHotel",
       image: "/HBS-homepage.webp",
-      description: "RevoHotel is a modern Hotel Booking Platform built with the latest web technologies. It allows users to browse rooms, make reservations, and handle payments seamlessly.",
+      description: "Architected and developed RevoHotel, a modern full-stack hotel booking platform utilizing Next.js, React Server Actions, and TypeScript to deliver a high-performance, SEO-optimized user experience. Designed a relational PostgreSQL schema using Prisma ORM, utilizing Prisma to handle database writes atomically, and established secure role-based access control via Auth.js. Integrated the Midtrans Payment Gateway API for secure transactions, and engineered dynamic workflows with date-conflict resolution.",
       link: "https://hotel-booking-crack.vercel.app/",
-      github: "https://github.com/rifqifzan/Hotel-Booking-Crack"
+      github: "https://github.com/rifqifzan/Hotel-Booking-Crack",
+      techStack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma ORM", "Auth.js", "Midtrans API"]
     }
   ];
 
@@ -67,7 +69,7 @@ export default function Projects() {
           <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-gradient-to-r from-primary to-secondary" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, idx) => (
             <div
               key={idx}
@@ -86,9 +88,20 @@ export default function Projects() {
                 <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors mb-2">
                   {project.title}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-6 flex-1 leading-relaxed">
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {project.description}
                 </p>
+
+                <div className="flex flex-wrap gap-1.5 mb-6">
+                  {project.techStack.map((tech, tIdx) => (
+                    <span
+                      key={tIdx}
+                      className="rounded bg-zinc-900 border border-zinc-800 px-2 py-0.5 text-[10px] font-medium text-zinc-450"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
 
                 <div className="flex gap-3 mt-auto pt-4 border-t border-border/50">
                   <a

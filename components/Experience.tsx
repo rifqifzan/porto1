@@ -20,37 +20,40 @@ export default function Experience() {
 
   const experiences: WorkExperience[] = [
     {
-      role: "IT Support",
+      role: "IT Support Technician",
       company: "PT Megariamas Sentosa",
-      period: "July 2023 - Present",
+      period: "Jul 2023 - Present",
       description: [
-        "Managed day-to-day enterprise hardware and software troubleshooting for terminal users and corporate systems.",
-        "Serviced and maintained laptops, desktop PCs, workstation hardware, and critical peripherals.",
-        "Maintained structured and up-to-date IT inventory databases, software licenses, and equipment tracking documentation."
+        "Diagnosed and resolved complex hardware, software, and network issues across corporate environments, consistently minimizing technical downtime and maintaining end-user productivity.",
+        "Established structured maintenance routines for corporate laptops and desktop PCs, reducing recurring technical incidents through proactive servicing and system configuration.",
+        "Administered and maintained corporate network infrastructure, including switches, routers, and access points to ensuring stable and secure connectivity across the organization's operational environment.",
+        "Overhauled IT inventory documentation system to improve asset lifecycle visibility and streamline software deployment tracking across the organization."
       ],
-      skillsLearned: ["Hardware Diagnostic", "Software Configuration", "Asset Management", "User Service Operations"]
+      skillsLearned: ["Hardware & Network", "System Configuration", "Network Infrastructure", "IT Asset Lifecycle"]
     },
     {
       role: "System Engineer",
       company: "PT Berca Hardayaperkasa",
       period: "Jan 2022 - Dec 2022",
       description: [
-        "Monitored server and infrastructure system performance actively at Bank Mandiri (one of the largest financial institutions in Indonesia).",
-        "Reported status reviews and critical system performance analytics directly to the Board of Directors.",
-        "Maintained and updated the automated robotic systems operating across Bank Mandiri's production environment."
+        "Maintained high availability of core enterprise systems within Bank Mandiri's production environment by continuously monitoring real-time performance metrics and resolving degradation before user impact occurred.",
+        "Ensured business continuity of Bank Mandiri's automated robot systems through rigorous operational maintenance and rapid troubleshooting of critical failures.",
+        "Strengthened incident response workflows by leading timely escalation of critical infrastructure issues to specialized engineering teams, minimizing operational disruption across production services.",
+        "Delivered structured performance analytical reports that provided engineering and management teams with actionable visibility into system health trends."
       ],
-      skillsLearned: ["Enterprise Monitoring", "Robotics System Maintenance", "Executive Reporting", "Linux & Shell Scripts"]
+      skillsLearned: ["System Monitoring", "Incident Response", "Automation Systems", "Performance Analytics"]
     },
     {
       role: "IT Support",
-      company: "PT Swalayan Sukses Abadi (Foodhall)",
-      period: "July 2020 - June 2021",
+      company: "PT Swalayan Sukses Abadi (The Foodhall)",
+      period: "Jul 2020 - Jun 2021",
       description: [
-        "Provided full-stack IT infrastructure support and system maintenance for two major Foodhall supermarket outlets.",
-        "Troubleshooted computer hardware, corporate software client tools, internal local networks, CCTV systems, and smart digital scales.",
-        "Maintained, backup configured, and managed branch servers and local databases (Oracle & Microsoft SQL Server)."
+        "Maintained uninterrupted IT operations across 2 supermarket branches by providing end-to-end infrastructure support covering networks, hardware, software, CCTV, and digital scales.",
+        "Resolved multi-site network and hardware failures through systematic troubleshooting, ensuring minimal downtime across store operations.",
+        "Strengthened data integrity by designing and implementing automated database backup strategies, eliminating the risk of transactional data loss across both branches.",
+        "Sustained system performance during high-load stock inventory audits by proactively identifying and resolving network bottlenecks, ensuring seamless data collection continuity."
       ],
-      skillsLearned: ["Network Maintenance", "Database Backups", "CCTV Infrastructure", "POS & Scales Tuning", "SQL Server & Oracle"]
+      skillsLearned: ["Infrastructure Support", "Multi-site Networking", "Database Backups", "Troubleshooting"]
     }
   ];
 

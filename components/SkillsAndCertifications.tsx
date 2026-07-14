@@ -27,23 +27,23 @@ export default function SkillsAndCertifications() {
 
   const skillGroups: SkillGroup[] = [
     {
-      category: "Network Administration",
-      description: "LAN/WAN routing, switching, and configuration architectures.",
-      items: ["Computer Networking", "MikroTik Routing", "Cisco CLI", "VRouter / Firewall Setup"],
+      category: "Frontend & Languages",
+      description: "Building responsive, modern, and highly interactive web user interfaces.",
+      items: ["TypeScript", "JavaScript", "React", "Next.js", "Tailwind CSS"],
       color: "border-primary hover:shadow-primary/10",
       icon: <IoGlobeOutline className="h-6 w-6 text-primary" />
     },
     {
-      category: "Databases & Storage",
-      description: "Structured query formulation, administration, and secure backup routines.",
-      items: ["Oracle Database", "Microsoft SQL Server", "Relational Database Management", "Database Administration"],
+      category: "Backend & Databases",
+      description: "Developing robust APIs and designing structured database schemas.",
+      items: ["Nest.js", "PostgreSQL", "MySQL", "Microsoft SQL Server", "PrismaORM"],
       color: "border-secondary hover:shadow-secondary/10",
       icon: <IoServerOutline className="h-6 w-6 text-secondary" />
     },
     {
-      category: "Systems & Diagnostics",
-      description: "Hypervisor virtualization setups, bare-metal hardware and corporate software troubleshooting.",
-      items: ["VMware ESXi", "Virtualization & Hypervisors", "Hardware Servicing", "Operating Systems Setup", "System Maintenance"],
+      category: "Tools & Infrastructure",
+      description: "Deploying production-ready applications with reliability and automation.",
+      items: ["Docker", "Postman", "Jest", "Railway", "Netlify", "Linux", "Network Administration"],
       color: "border-accent hover:shadow-accent/10",
       icon: <IoHardwareChipOutline className="h-6 w-6 text-accent" />
     }
@@ -51,46 +51,10 @@ export default function SkillsAndCertifications() {
 
   const certifications: Certification[] = [
     {
-      title: "CCNA Routing and Switching",
-      issuer: "Netcampus",
-      year: "2019",
-      details: "Cisco Certified Network Associate routing policies & CLI controls"
-    },
-    {
-      title: "MTCNA (MikroTik Certified Network Associate)",
-      issuer: "MikroTik",
-      year: "2015",
-      details: "MikroTik RouterOS setups, bridging, queueing & routing controls"
-    },
-    {
-      title: "Introduction to Fiber Optic Cabling",
-      issuer: "Netcampus",
-      year: "2019",
-      details: "Splicing, measuring link losses, and fiber distribution principles"
-    },
-    {
-      title: "Database Fundamentals",
-      issuer: "Microsoft",
-      year: "2017",
-      details: "Core relational structures, SQL syntax, security configurations"
-    },
-    {
-      title: "Introduction to Oracle Report Developer",
-      issuer: "Oracle",
-      year: "2018",
-      details: "Enterprise reporting structures, PL/SQL data fetching modules"
-    },
-    {
-      title: "TOEFL ITP Certificate (Score: 483)",
-      issuer: "Lembaga Bahasa / ETS",
-      year: "2015",
-      details: "Professional working English proficiency credentials"
-    },
-    {
-      title: "English Course (High Intermediate Level)",
-      issuer: "LBPP LIA",
-      year: "2013",
-      details: "Advanced conversational and technical syntax training"
+      title: "Full Stack Software Engineering",
+      issuer: "RevoU",
+      year: "2025",
+      details: "Comprehensive training in modern web development, TypeScript, Next.js, Nest.js, PostgreSQL, and software testing."
     }
   ];
 
@@ -160,15 +124,15 @@ export default function SkillsAndCertifications() {
                 Technical Competencies
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Core technologies, database engines, operating architectures, and hardware diagnostics compiled throughout engineering posts.
+                Core technologies, frontend frameworks, backend APIs, and databases used to build production-grade web applications.
               </p>
             </div>
 
             <div className="skills-grid-container space-y-6">
               {skillGroups.map((group, idx) => (
                 <div
-                  key={idx}
-                  className={`skill-card rounded-2xl border bg-zinc-900/30 glass-card p-6 transition-all duration-300 hover:scale-[1.02] shadow-md ${group.color}`}
+                   key={idx}
+                   className={`skill-card rounded-2xl border bg-zinc-900/30 glass-card p-6 transition-all duration-300 hover:scale-[1.02] shadow-md ${group.color}`}
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-950 border border-zinc-800">
@@ -201,7 +165,7 @@ export default function SkillsAndCertifications() {
                 Professional Credentials
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Vendor certifications and training validating network management, optical transmission, query building, and english capacities.
+                Professional credentials validating software engineering expertise and technical bootcamp completion.
               </p>
             </div>
 

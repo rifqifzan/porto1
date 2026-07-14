@@ -25,35 +25,23 @@ interface OrganizationItem {
 export default function EducationAndOrganizations() {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const educationList: EducationItem[] = [
+  const bootcamps: EducationItem[] = [
     {
-      degree: "Bachelor's Degree (S1)",
-      major: "Computer Systems Engineering",
-      institution: "Gunadarma University",
-      period: "2014 - 2019",
-      details: "Graduated with a GPA of 3.38 / 4.00. Main subjects included Computer Networks, Database Systems, Computer Architecture, and Microcontrollers."
-    },
-    {
-      degree: "High School Diploma",
-      major: "Natural Sciences (IPA)",
-      institution: "SMAN 54 Jakarta",
-      period: "2011 - 2014",
-      details: "Active in science clubs and youth research groups."
+      degree: "Full Stack Software Engineering",
+      major: "Learning Bootcamp",
+      institution: "RevoU",
+      period: "Jun 2025 - Jan 2026",
+      details: "An intensive full-stack development program focusing on production-ready applications. Built projects using TypeScript, Next.js, Nest.js, and PostgreSQL. Final Project: RevoHotel (Hotel Booking Website)."
     }
   ];
 
-  const organizationList: OrganizationItem[] = [
+  const degrees: EducationItem[] = [
     {
-      role: "Member",
-      organization: "Computer Engineering Student Association (Gunadarma University)",
-      period: "2015 - 2018",
-      description: "Coordinated tech seminars, campus networking labs workshops, and student dev hackathons."
-    },
-    {
-      role: "Head of Mathematics and Natural Sciences (MIPA) Division",
-      organization: "Youth Scientific Paper Organization (SMAN 54 Jakarta)",
-      period: "2012",
-      description: "Led the division in formulating research projects, drafting physics/chemistry studies, and representing the school in scientific competitions."
+      degree: "Bachelor Degree of Computer System",
+      major: "Computer Systems Engineering",
+      institution: "Gunadarma University",
+      period: "Aug 2014 - Jul 2019",
+      details: "Graduated with a GPA of 3.38 / 4.00. Thesis: Design of IoT Based Excavator Robot Prototype Using the Raspberry Pi 3 B and Raspberry Pi Camera Module."
     }
   ];
 
@@ -76,9 +64,9 @@ export default function EducationAndOrganizations() {
         }
       );
 
-      // Stagger reveal organization blocks
+      // Stagger reveal degree blocks
       gsap.fromTo(
-        ".org-item",
+        ".deg-item",
         { opacity: 0, y: 30 },
         {
           opacity: 1,
@@ -86,7 +74,7 @@ export default function EducationAndOrganizations() {
           duration: 0.8,
           stagger: 0.2,
           scrollTrigger: {
-            trigger: ".org-container",
+            trigger: ".deg-container",
             start: "top 85%",
             toggleActions: "play none none none",
           },
@@ -108,7 +96,7 @@ export default function EducationAndOrganizations() {
             Academic Background
           </h2>
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-white">
-            Education &amp; Organizations
+            Education
           </h1>
           <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-gradient-to-r from-secondary to-primary" />
         </div>
@@ -120,15 +108,15 @@ export default function EducationAndOrganizations() {
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-900 border border-zinc-800">
                   <IoSchoolOutline className="h-5 w-5 text-secondary" />
                 </div>
-                Academic Education
+                Bootcamps &amp; Specializations
               </h3>
               <p className="text-sm text-muted-foreground">
-                Bachelor systems degree and foundational secondary school tracks.
+                Intensive vocational programs and software engineering Bootcamps.
               </p>
             </div>
 
             <div className="space-y-6">
-              {educationList.map((edu, idx) => (
+              {bootcamps.map((edu, idx) => (
                 <div
                   key={idx}
                   className="edu-item rounded-2xl border border-zinc-850 bg-zinc-900/40 glass-card p-6 md:p-8 hover:border-secondary/40 transition-all duration-300 relative group"
@@ -155,39 +143,42 @@ export default function EducationAndOrganizations() {
             </div>
           </div>
 
-          <div className="org-container flex flex-col gap-8">
+          <div className="deg-container flex flex-col gap-8">
             <div>
               <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-3">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-900 border border-zinc-800">
-                  <IoPeopleOutline className="h-5 w-5 text-primary" />
+                  <IoSchoolOutline className="h-5 w-5 text-primary" />
                 </div>
-                Organizations &amp; Leadership
+                University Education
               </h3>
               <p className="text-sm text-muted-foreground">
-                Involvement in engineering groups and leadership responsibilities.
+                Formal higher education degrees and academic credentials.
               </p>
             </div>
 
             <div className="space-y-6">
-              {organizationList.map((org, idx) => (
+              {degrees.map((org, idx) => (
                 <div
                   key={idx}
-                  className="org-item rounded-2xl border border-zinc-850 bg-zinc-900/40 glass-card p-6 md:p-8 hover:border-primary/40 transition-all duration-300 relative group"
+                  className="deg-item rounded-2xl border border-zinc-850 bg-zinc-900/40 glass-card p-6 md:p-8 hover:border-primary/40 transition-all duration-300 relative group"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                     <div>
                       <h4 className="text-lg font-bold text-white group-hover:text-primary transition-colors">
-                        {org.role}
+                        {org.degree}
                       </h4>
-                      <p className="text-sm font-semibold text-accent">{org.organization}</p>
+                      <p className="text-sm font-semibold text-accent">{org.major}</p>
                     </div>
                     <span className="rounded-full bg-zinc-950 border border-zinc-800 px-3.5 py-1 text-xs font-semibold text-muted-foreground">
                       {org.period}
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {org.description}
-                  </p>
+                  <h5 className="text-sm font-bold text-zinc-300 mb-3">{org.institution}</h5>
+                  {org.details && (
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {org.details}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
